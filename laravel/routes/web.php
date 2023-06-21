@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 // Importing Controller
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserController2;
+use App\Http\Controllers\UserController3;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,3 +41,16 @@ Route::get('/contact', function () {
 Route::get('/user/{id}',[UserController::class,'show']);
 
 Route::get('/users',[UserController2::class,'loadView']);
+
+Route::post('/form',[UserController3::class,'getData']);
+
+Route::view('/form','login')->middleware('protectedPage');
+
+Route::get('/noaccess', function () {
+    return view('noAccess');
+});
+
+// ❓For group middleware
+Route::group(['middleware'=>['protectedPage']],function(){
+    Route::view('/home','home');
+}); 

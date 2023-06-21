@@ -10,3 +10,6 @@
 
 ❗ Blade Template
 => Convert Plain text to php text and give output like using this -> {{}} instead of writing inside of this -> <?php ?>
+
+❗ Middlware
+=> Set of rule that we can apply to a route like authentication, location, check age etc

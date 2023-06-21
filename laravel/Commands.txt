@@ -21,3 +21,5 @@
 ❓To use for statement use @foreach({array-name} as {single-name}) without curly brackets and end with @endforeach
 
 ❓To use another blade.php file in a blade.php file use @include({file-name})
+
+❓To make a middleware --> php artisan make:middleware {middleware-name}
