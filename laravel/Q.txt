@@ -1,0 +1,12 @@
+❗MVC
+=> Model View Controller (MVC) architecture is a software design pattern commonly used for developing user interfaces which divides the related program logic into three interconnected elements. This is done to separate internal representations of information from the ways information is presented to and accepted from the user.
+=> Model ==> Database, Database Interaction
+=> View ==> User Interface or UI or HTML
+=> Controller ==> Connect View and Model, Routes, Get request from the user and control Model and View
+
+❗Composer
+=> Dependacy manager for PHP
+=> Like npm in Node
+
+❗ Blade Template
+=> Convert Plain text to php text and give output like using this -> {{}} instead of writing inside of this -> <?php ?>

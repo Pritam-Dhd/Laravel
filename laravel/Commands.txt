@@ -1,0 +1,23 @@
+❓TO know the version of laravel --> php artisan about
+
+❓To run the laravel --> php artisan serve
+
+❓To make Controllers --> php artisan make:controller {controller-name}
+
+❓To make Component --> php artisan make:component {component-name}
+
+❓Use Component in HTML <x-{component-name}/>
+
+❓To get the current url without params of a page --> {{URL::current()}}
+
+❓To get the current url with params of a page --> {{URL::full()}}
+
+❓To get previous url --> {{URL::previous()}}
+
+❓To use if-else use @if  @else without curly brackets and end with @endif
+
+❓To use for statement use @for() without curly brackets and end with @endfor
+
+❓To use for statement use @foreach({array-name} as {single-name}) without curly brackets and end with @endforeach
+
+❓To use another blade.php file in a blade.php file use @include({file-name})
