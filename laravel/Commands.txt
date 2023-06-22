@@ -23,3 +23,53 @@
 ❓To use another blade.php file in a blade.php file use @include({file-name})
 
 ❓To make a middleware --> php artisan make:middleware {middleware-name}
+
+❓To make a model --> php artisan make:model {model-name} where make the model name singular of the database table name to make it easier to connect
+
+❓To connect to the database in controller --> use Illuminate\Support\Facades\DB;
+
+❓To get specific data --> DB::table({Table-name})
+                            ->where({condition})
+                            ->get();
+
+❓To get all data --> DB::table({Table-name})->get();
+
+❓To insert data --> DB::table({Table-name})->insert([{insert-data}])
+
+❓To update data --> DB::table({Table-name})
+                    ->where({condition})
+                    ->update([{update-data}]);
+
+❓To delete data --> DB::table({Table-name})->delete([{delete-data}]);
+
+❓To find specific no of data --> (array) DB::table({Table-name})->find({no-of-data});
+
+❓To find min value --> DB::table({Table-name})->min({row-name})
+
+❓To find max value --> DB::table({Table-name})->max({row-name})
+
+❓To find avg value --> DB::table({Table-name})->avg({row-name})
+
+❓To find sum value --> DB::table({Table-name})->sum({row-name})
+
+❓To join and get data from 2 tables --> DB::table({Table-name})
+                                        ->join({to-Join-Table-name},{join table data which has this data in 2nd table},'=','join table data which has this data in 1nd table')
+                                        ->get();
+
+❓To make migration --> php artisan make:migration create_{migration-name}_table
+
+❓To create a row in migration file --> $table->{data-type-for-the-column}('{Column-name}');
+
+❓To run all the migration files --> php artisan migrate
+
+❓To migrate a specific file --> php artisan migrate --path=/database/migrations/fileName.php
+
+❓To reset or delete all migration --> php artisan migrate:reset
+
+❓To rollback or delete last migration --> php artisan migrate:rollback
+
+❓To rollback or delete last no of migration --> php artisan migrate:rollback --step {no-of-migration}
+
+❓To rollback a specific migration --> php artisan migrate:rollback --path=/database/migrations/fileName.php
+
+❓To refresh a migration or will roll back all of your migrations and then execute the migrate command --> php artisan migrate:refresh
